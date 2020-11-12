@@ -54,11 +54,13 @@ function createCountriesList(countriesList) {
     return;
   }
 
-  refs.bodyEl.insertAdjacentHTML(
-    'beforeend',
-    countriesListTemplate(countriesList),
-  );
-  info({
-    text: 'Виведено список країн за запитом.',
-  });
+  if (countriesList.length > 1 && countriesList.length <= 10) {
+    refs.bodyEl.insertAdjacentHTML(
+      'beforeend',
+      countriesListTemplate(countriesList),
+    );
+    info({
+      text: 'Виведено список країн за запитом.',
+    });
+  }
 }
