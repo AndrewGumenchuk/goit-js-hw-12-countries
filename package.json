@@ -1,25 +1,25 @@
 {
-  "name": "webpack-starter-kit",
+  "name": "goit-js-hw-12-countries",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --env.mode development --config ./webpack/config.js",
+   "start": "webpack-dev-server --env.mode development --config ./webpack/config.js",
     "build": "webpack --env.mode production --config ./webpack/config.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndrewGumenchuk/webpack-starter-kit.git"
+    "url": "git+https://github.com/AndrewGumenchuk/goit-js-hw-12-countries.git"
   },
   "keywords": [],
   "author": "Gumenchuk Andrew <gumenchukandrew@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AndrewGumenchuk/webpack-starter-kit/issues"
+    "url": "https://github.com/AndrewGumenchuk/goit-js-hw-12-countries/issues"
   },
-  "homepage": "https://github.com/AndrewGumenchuk/webpack-starter-kit#readme",
+  "homepage": "https://github.com/AndrewGumenchuk/goit-js-hw-12-countries#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -50,6 +50,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "handlebars": "^4.7.6"
+    "handlebars": "^4.7.6",
+    "lodash.debounce": "^4.0.8",
+    "material-design-icons": "^3.0.1",
+    "pnotify": "^5.1.2"
   }
 }
